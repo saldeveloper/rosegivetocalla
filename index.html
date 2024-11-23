@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Rose</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Rose Design -->
+  <div class="rose">
+    <div class="stem"></div>
+    <div class="leaf leaf-left"></div>
+    <div class="leaf leaf-right"></div>
+    <div class="flower">
+      <div class="petal petal1"></div>
+      <div class="petal petal2"></div>
+      <div class="petal petal3"></div>
+      <div class="petal petal4"></div>
+    </div>
+  </div>
+
+  <!-- Love Message -->
+  <div class="love-message">
+    <h1>
+      <span id="love-text"></span>
+    </h1>
+  </div>
+
+  <script>
+    // Write "I love you Calla" 100 times dynamically
+    const loveText = document.getElementById('love-text');
+    let message = '';
+    for (let i = 0; i < 1000; i++) {
+      message += 'I love you Calla<br>';
+    }
+    loveText.innerHTML = message;
+  </script>
+</body>
+</html>
